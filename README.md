@@ -1,6 +1,8 @@
 gulp-browserify-react-phonegap-starter
 ================
 
+A modified version of [stample's starter](https://github.com/stample/gulp-browserify-react-phonegap-starter) with some personalizations.
+
 Inspired by the structure of [Gulp-starter](https://github.com/greypants/gulp-starter)
 
 This app uses at runtime: 
