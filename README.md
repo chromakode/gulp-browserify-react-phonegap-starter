@@ -16,7 +16,7 @@ At build time:
 
 - Compiles React's JSX files
 - Process images (compress)
-- Process CSS with Recess and Less
+- Process CSS with Less
 - Assemble JS file with Browserify
 
 This creates a simple Gulp config that will build a simple app using Browserify and 2 React components. Here's a picture of it using Ripple emulator:
