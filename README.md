@@ -11,7 +11,6 @@ This app uses at runtime:
 - Underscore 
 - JQuery
 
-
 At build time:
 
 - Compiles React's JSX files
@@ -28,26 +27,9 @@ Only the very minimal files required are added to Git. The Cordova `www` folder 
 Using a [Browserify trick](https://github.com/greypants/gulp-starter/issues/17), you can also express all your `require` calls with paths relative to the `src` folder. This means you don't have anymore to write `require("../../../../../js/components/relativePathHellComponent")` but you can simply write `require("js/components/relativePathHellComponent")` from any source file.
 
 
-# Versions
-
-- Cordova: `3.4.1-0.1.0`
-- Gulp: `3.6.2`
-- Phonegap: `3.5.0-0.20.4`
-- Ripple: `0.9.22`
-
-(Yes Cordova and Phonegap versions are not the same, I just show you versions that work on my computer but you should be able to use latest versions as well)
-
 # Install the tools
 
 - Install NPM, `npm` command should be available `sudo apt-get install npm`
-
-- Install required NPM dependencies:
-```
-npm install -g gulp@3.6.2
-npm install -g cordova@3.4.1-0.1.0
-npm install -g phonegap@3.5.0-0.20.4
-npm install -g ripple-emulator@0.9.22
-```
 
 - Install local NPM dependencies: `npm install`
 
@@ -60,14 +42,12 @@ export ANDROID_HOME=<YOUR_PATH>/adt-bundle-linux-x86_64-20140321/sdk
 export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 ```
 
+- Run gulp to create initial compiled files: `gulp`
+
 - Install the Android platform to the project:
 ```
 cordova platform add android
 ```
-
-
-- If you want to use iOS: I can't help you, I don't have OSX but I guess installing the iOS SDK + `cordova platform add ios` should be fine.
-
 
 # START
 
@@ -82,10 +62,9 @@ This will create the appropriate Phonegap content in `www` based on your source 
 - Launch Ripple Emulator
 
 ```
+npm install ripple-emulator
 ripple emulate
 ```
-
-Notice that if you want to do Ajax requests with Chrome, you have to [disable the CORS securities in chrome](http://stackoverflow.com/questions/3102819/disable-same-origin-policy-in-chrome) and also disable the Cross Domain Proxy on Ripple settings.
 
 
 - Launch Native Android emulator (if you don't like Ripple):
@@ -116,10 +95,4 @@ You can't use an Android device in Ripple unless you install the Android platfor
 
 Some useful links to read:
 
-- [Ripple is rebord](http://www.raymondcamden.com/index.cfm/2013/11/5/Ripple-is-Reborn)
-
-# TODO
-
-- Use watchify to make the build faster
-- Fail safe on Recess error
-- Perhaps add some default phonegap plugins or config (I'm not an expert)
+- [Ripple is reborn](http://www.raymondcamden.com/index.cfm/2013/11/5/Ripple-is-Reborn)
