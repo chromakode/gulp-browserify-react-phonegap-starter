@@ -10,7 +10,7 @@ gulp.task('browserify', function() {
     paths: ['./node_modules','./src/js/']
   })
     .transform('reactify')
-    .bundle({debug: true})
+    .bundle()
     .on('error', handleErrors)
     .pipe(source('app.js'))
     .pipe(gulp.dest('./www'))
