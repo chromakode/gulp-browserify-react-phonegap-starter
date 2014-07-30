@@ -90,6 +90,11 @@ This happens because you didn't use the `cordova platform add android` command. 
 This is probably because Ripple is launched by default with an Android device selected. 
 You can't use an Android device in Ripple unless you install the Android platform. But you can select an iOS device in Ripple and it should work this time.
 
+- Build fails with "Cannot run program YOURPATH/aapt".
+
+You are running on a 64-bit OS, which is missing 32 bit versions of libraries which the android "aapt" tool needs to run.
+
+`sudo apt-get install libstdc++6:i386 zlib1g:i386`
 
 # More infos
 
