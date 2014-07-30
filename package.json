@@ -1,10 +1,10 @@
 {
-    "name": "stample-phonegap",
+    "name": "NAME",
     "version": "0.0.1",
-    "description": "The stample phonegap hybrid app, using Gulp, Browserify and React",
+    "description": "DESCRIPTION",
     "repository": {
         "type": "git",
-        "url": "git@github.com:stample/gulp-browserify-react-phonegap-starter.git"
+        "url": "git@github.com:chromakode/gulp-browserify-react-phonegap-starter.git"
     },
     "keywords": [
         "stample",
@@ -12,7 +12,7 @@
         "react",
         "browserify"
     ],
-    "author": "Sebastien Lorber",
+    "author": "AUTHOR",
     "license": "Apache",
     "dependencies": {
         "cordova": "~3.4.1-0.1.0",
