@@ -10,6 +10,7 @@ gulp.task('browserify', function() {
     paths: ['./node_modules','./src/js/']
   })
     .transform('reactify')
+    .transform('envify')
     .bundle()
     .on('error', handleErrors)
     .pipe(source('app.js'))
